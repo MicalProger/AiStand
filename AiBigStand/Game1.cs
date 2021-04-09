@@ -39,16 +39,14 @@ namespace AiBigStand
         {
             // TODO: Add your initialization logic here
             answers = new double[10];
-            //net = new NeuralCore(@"C:\Users\Mikhail\source\repos\AINumberTrain\AINumberTrain\links.txt");
-            //neuralUpdate = new Timer();
-            //neuralUpdate.Tick += NeuralUpdate_Tick;
-            //neuralUpdate.Interval = 250;
-            //neuralUpdate.Start();
-
+            net = new NeuralCore(@"links.txt");
+            matrix = new double[cellCount, cellCount];
+            int num = 0;
+            neuralUpdate = new Timer(new TimerCallback(NeuralUpdate_Tick), num, 0, 250);
             base.Initialize();
         }
 
-        private void NeuralUpdate_Tick(object sender, EventArgs e)
+        private void NeuralUpdate_Tick(object state)
         {
             var localMatrix = new List<double>();
             foreach (var item in matrix)
@@ -62,7 +60,6 @@ namespace AiBigStand
         {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
             // TODO: use this.Content to load your game content here
-            matrix = new double[cellCount, cellCount];
             rectangleBlock = new Texture2D(GraphicsDevice, 1, 1);
             r = new Rectangle(new Point(0, 0), new Point(cellSize, cellSize));
         }

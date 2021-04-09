@@ -35,3 +35,5 @@ C:\Users\Mikhail\source\repos\AiBigStand\AiBigStand\obj\Debug\netcoreapp3.1\AiBi
 C:\Users\Mikhail\source\repos\AiBigStand\AiBigStand\obj\Debug\netcoreapp3.1\AiBigStand.pdb
 C:\Users\Mikhail\source\repos\AiBigStand\AiBigStand\obj\Debug\netcoreapp3.1\AiBigStand.genruntimeconfig.cache
 C:\Users\Mikhail\source\repos\AiBigStand\AiBigStand\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\Mikhail\source\repos\AiBigStand\AiBigStand\bin\Debug\netcoreapp3.1\traindata.txt
+C:\Users\Mikhail\source\repos\AiBigStand\AiBigStand\bin\Debug\netcoreapp3.1\links.txt
