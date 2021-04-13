@@ -15,7 +15,6 @@ namespace AiBigStand
     public class Game1 : Game
     {
         Keys lastKey = Keys.Down;
-        StreamWriter streamWriter = new StreamWriter(@"C:\Users\Mikhail\source\repos\AiBigStand\AiBigStand\traindata.txt", true);
         double[] answers;
         private Timer neuralUpdate;
         private GraphicsDeviceManager _graphics;
@@ -119,62 +118,61 @@ namespace AiBigStand
             }
             KeyboardState keyboardState = Keyboard.GetState();
 
-            if (!keyboardState.GetPressedKeys().Contains(lastKey) && keyboardState.IsKeyDown(Keys.LeftControl) && keyboardState.GetPressedKeys().Length == 3)
-            {
-                if (lastKey == Keys.Down)
-                    lastKey = Keys.Up;
-                else
-                    lastKey = Keys.Down;
-                string answer = string.Empty;
-                switch (keyboardState.GetPressedKeys()[1])
-                {
-                    case Keys.NumPad0:
-                        answer = "0000000001";
-                        break;
-                    case Keys.NumPad1:
-                        answer = "1000000000";
-                        break;
-                    case Keys.NumPad2:
-                        answer = "0100000000";
-                        break;
-                    case Keys.NumPad3:
-                        answer = "0010000000";
-                        break;
-                    case Keys.NumPad4:
-                        answer = "0001000000";
-                        break;
-                    case Keys.NumPad5:
-                        answer = "0000100000";
-                        break;
-                    case Keys.NumPad6:
-                        answer = "0000010000";
-                        break;
-                    case Keys.NumPad7:
-                        answer = "0000001000";
-                        break;
-                    case Keys.NumPad8:
-                        answer = "0000000100";
-                        break;
-                    case Keys.NumPad9:
-                        answer = "0000000010";
-                        break;
-                    default:
-                        answer = "non";
-                        break;
-                }
-                try
-                {
-                    if (answer != "non")
-                    {
-                        SaveImage(answer, streamWriter);
-                        matrix = new double[cellCount, cellCount];
-                    }
-                }
-                finally
-                {
+            //if (!keyboardState.GetPressedKeys().Contains(lastKey) && keyboardState.IsKeyDown(Keys.LeftControl) && keyboardState.GetPressedKeys().Length == 3)
+            //{
+            //    if (lastKey == Keys.Down)
+            //        lastKey = Keys.Up;
+            //    else
+            //        lastKey = Keys.Down;
+            //    string answer = string.Empty;
+            //    switch (keyboardState.GetPressedKeys()[1])
+            //    {
+            //        case Keys.NumPad0:
+            //            answer = "0000000001";
+            //            break;
+            //        case Keys.NumPad1:
+            //            answer = "1000000000";
+            //            break;
+            //        case Keys.NumPad2:
+            //            answer = "0100000000";
+            //            break;
+            //        case Keys.NumPad3:
+            //            answer = "0010000000";
+            //            break;
+            //        case Keys.NumPad4:
+            //            answer = "0001000000";
+            //            break;
+            //        case Keys.NumPad5:
+            //            answer = "0000100000";
+            //            break;
+            //        case Keys.NumPad6:
+            //            answer = "0000010000";
+            //            break;
+            //        case Keys.NumPad7:
+            //            answer = "0000001000";
+            //            break;
+            //        case Keys.NumPad8:
+            //            answer = "0000000100";
+            //            break;
+            //        case Keys.NumPad9:
+            //            answer = "0000000010";
+            //            break;
+            //        default:
+            //            answer = "non";
+            //            break;
+            //    }
+            //    try
+            //    {
+            //        if (answer != "non")
+            //        {
+            //            matrix = new double[cellCount, cellCount];
+            //        }
+            //    }
+            //    finally
+            //    {
 
-                }
-            }
+            //    }
+            //}
             base.Update(gameTime);
         }
 
@@ -224,8 +222,6 @@ namespace AiBigStand
 
         protected override void UnloadContent()
         {
-            streamWriter.Close();         
-            streamWriter.Dispose();
             base.UnloadContent();
         }
     }

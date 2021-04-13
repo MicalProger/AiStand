@@ -7416,11 +7416,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Mikhail\\source\\repos\\AiBigStand\\AiBigStand\\AiBigStand.csproj",
+      "projectUniqueName": "C:\\Users\\Mikhail\\source\\repos\\AiStandGit\\AiStand\\AiBigStand\\AiBigStand.csproj",
       "projectName": "AiBigStand",
-      "projectPath": "C:\\Users\\Mikhail\\source\\repos\\AiBigStand\\AiBigStand\\AiBigStand.csproj",
+      "projectPath": "C:\\Users\\Mikhail\\source\\repos\\AiStandGit\\AiStand\\AiBigStand\\AiBigStand.csproj",
       "packagesPath": "C:\\Users\\Mikhail\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Mikhail\\source\\repos\\AiBigStand\\AiBigStand\\obj\\",
+      "outputPath": "C:\\Users\\Mikhail\\source\\repos\\AiStandGit\\AiStand\\AiBigStand\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

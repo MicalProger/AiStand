@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jLs2iXzy7EWD7qW+jcmewgf/Rired0BtN33Z+o+7gu61Zb4YD0y4vxxOgdCFk/2i/AzxTt/zmpWjMYTZkBOYsQ==",
+  "dgSpecHash": "A8pCvXMXEX2MFXs+m6iu9ElpheL3hANCFpBaxtglJ0eCRxcitzZ8QDXrlk+kPzWdqTqQkNjIEt7TzcNGzLxCMQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Mikhail\\source\\repos\\AiBigStand\\AiBigStand\\AiBigStand.csproj",
+  "projectFilePath": "C:\\Users\\Mikhail\\source\\repos\\AiStandGit\\AiStand\\AiBigStand\\AiBigStand.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Mikhail\\.nuget\\packages\\libuv\\1.9.1\\libuv.1.9.1.nupkg.sha512",
     "C:\\Users\\Mikhail\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\1.1.0\\microsoft.codeanalysis.analyzers.1.1.0.nupkg.sha512",
