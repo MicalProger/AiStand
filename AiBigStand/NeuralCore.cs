@@ -12,15 +12,6 @@ namespace AutoNeuralNet
     {
         double[][,] links;
 
-        public void SaveLinks()
-        {
-            StreamWriter stream = new StreamWriter(@"C:\Users\Mikhail\source\repos\ANNGit\AutoNeuralNet\AutoNeuralNet\links.txt");
-            string tlinks = JsonConvert.SerializeObject(links, Formatting.Indented);
-            stream.WriteLine(tlinks);
-            stream.Close();
-            stream.Dispose();
-        }
-
         private double F(double x) => (2 / (1 + Math.Exp(-x))) - 1;
 
         private double Df(double x) => 0.5 * (1 + F(x)) * (1 - F(x));
@@ -128,7 +119,6 @@ namespace AutoNeuralNet
 
         public void StartTraining(int iterations, double[][] tests, double[][] correctOutputs, double lmd = 0.001)
         {
-            StreamWriter stream = new StreamWriter("C:\\Users\\Mikhail\\Desktop\\Logs\\snn2.log.txt");
             for (int N = 0; N < iterations; N++)
             {
                 var deltaToSave = 0.0;
@@ -179,10 +169,8 @@ namespace AutoNeuralNet
                     }
 
                 }
-                SaveToLog(stream, new object[] { links[0][0, 0], e });
+
             }
-            stream.Close();
-            stream.Dispose();
         }
     }
 }
